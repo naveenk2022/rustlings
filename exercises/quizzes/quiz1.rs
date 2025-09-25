@@ -15,6 +15,12 @@
 fn main() {
     // You can optionally experiment here.
 }
+fn calculate_price_of_apples(apple_quantity: u32) -> u32 {
+    if apple_quantity <41 {
+        apple_quantity * 2
+    }
+    else {apple_quantity}
+}
 
 // Don't change the tests!
 #[cfg(test)]
