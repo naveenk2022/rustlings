@@ -1,6 +1,8 @@
 // TODO: Fix the compiler error.
 fn main() {
-    let x = 3;
+    //let x = 3;
+    // Making the variable mutable
+    let mut x = 3;
     println!("Number {x}");
 
     x = 5; // Don't change this line
