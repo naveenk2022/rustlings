@@ -13,13 +13,13 @@ fn string(arg: String) {
 // Your task is to replace `placeholder(…)` with either `string_slice(…)`
 // or `string(…)` depending on what you think each value is.
 fn main() {
-    string("blue");
+    string_slice("blue");
 
     string("red".to_string());
 
     string(String::from("hi"));
 
-    string_slice("rust is fun!".to_owned());
+    string("rust is fun!".to_owned());
 
     string("nice weather".into());
 
@@ -27,9 +27,9 @@ fn main() {
 
     // WARNING: This is byte indexing, not character indexing.
     // Character indexing can be done using `s.chars().nth(INDEX)`.
-    string(&String::from("abc")[0..1]);
+    string_slice(&String::from("abc")[0..1]);
 
-    string("  hello there ".trim());
+    string_slice("  hello there ".trim());
 
     string("Happy Monday!".replace("Mon", "Tues"));
 
